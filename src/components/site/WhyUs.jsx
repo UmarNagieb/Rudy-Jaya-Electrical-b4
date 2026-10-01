@@ -14,7 +14,7 @@ export default function WhyUs() {
               02 — Kenapa Kami
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Kenapa banyak orang memilih Rudy Jaya Elektrical
+              Pekerjaan kelistrikan profesional yang dapat Anda percayai
             </h2>
           </div>
         </Reveal>

@@ -243,23 +243,23 @@ export const TARGET_MARKET = [
 export const WHY_US = [
   {
     icon: "Users",
-    title: "Penanganan sesuai kebutuhan",
-    description: "Kami menyesuaikan pekerjaan dengan kondisi rumah, kantor, atau usaha Anda agar hasilnya aman dan sesuai dengan kebutuhan listrik harian.",
+    title: "Pelayanan Profesional",
+    description: "Tim teknisi berpengalaman kami merespon kebutuhan Anda dengan ramah dan memberikan solusi yang tepat sesuai kebutuhan Anda.",
   },
   {
     icon: "BadgeCheck",
-    title: "Teknisi yang paham kerja lapangan",
-    description: "Tim kami bekerja di lokasi dengan pendekatan yang praktis dan tetap memperhatikan keselamatan serta alur pengerjaan yang rapi.",
+    title: "Teknisi Bersertifikat",
+    description: "Tenaga kami bersertifikat dan berpengalaman, siap menangani segala skala pekerjaan listrik dengan aman.",
   },
   {
     icon: "ShieldCheck",
-    title: "Material yang dipilih sesuai kebutuhan",
-    description: "Material dan komponen yang kami pakai disesuaikan dengan kondisi instalasi agar aman, kuat, dan tahan lama.",
+    title: "Material Standar SNI",
+    description: "Semua material yang kami gunakan berstandar SNI untuk keamanan dan ketahanan jangka panjang.",
   },
   {
     icon: "Wrench",
-    title: "Hasil yang rapi dan mudah dipakai",
-    description: "Kami memperhatikan tata letak kabel, titik lampu, dan panel agar sistem listrik berfungsi dengan nyaman dan terlihat rapi.",
+    title: "Kualitas Standar Tinggi",
+    description: "Kami mengutamakan kualitas dengan peralatan modern dan teknologi terkini untuk hasil terbaik.",
   },
 ];
 
