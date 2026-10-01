@@ -13,8 +13,6 @@ const IMG = {
   renovation: "/images/renovation.png",
 };
 
-const BUSINESS_ADDRESS = "Dekat Jl. Karet Pasar Baru Barat I No.22, RT.12/RW.7, Karet Tengsin, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10250, RT.16/RW.7, Karet Tengsin, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10210";
-
 export const BUSINESS = {
   name: "Rudy Jaya Elektrical",
   logo: businessLogo,
@@ -27,7 +25,7 @@ export const BUSINESS = {
   address: "Jl. Karet Pasar Baru Barat I No. 22, Karet Tengsin, Tanah Abang, Jakarta Pusat",
   hoursWeek: "Senin–Sabtu, 08.00–20.00 WIB",
   hoursSun: "Minggu, 09.00–20.00 WIB",
-  mapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_ADDRESS)}`,
+  mapsUrl: "https://www.google.com/maps/place/Tukang+listrik+JAKARTA+(Rudy+jaya+elektrical)/@-6.2059353,106.8107168,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f73d4289691f:0xa3cc1f41a0f27985!8m2!3d-6.2059353!4d106.8107168!16s%2Fg%2F11xtnrn4z_?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
   areas: [
     "Karet Tengsin", "Tanah Abang", "Bendungan Hilir", "Kebon Melati",
     "Cideng", "Petamburan", "Sudirman", "Jakarta Pusat",
