@@ -65,17 +65,24 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="lg:hidden bg-onyx border-t border-white/10">
-          <div className="px-5 py-4 space-y-1">
-            {NAV_LINKS.map((link) => (
+        <div className="lg:hidden bg-onyx border-t border-white/10 shadow-[0_12px_24px_rgba(0,0,0,0.12)] animate-nav-panel">
+          <div className="px-3 py-3 space-y-2">
+            {NAV_LINKS.map((link, index) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className={`block px-3 py-3 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-white/5 hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold ${active === link.href.slice(1) ? "text-gold bg-white/5" : "text-white/70"
+                style={{ animationDelay: `${index * 50}ms` }}
+                className={`group relative block animate-nav-item overflow-hidden rounded-md px-3 py-3 text-sm font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold ${active === link.href.slice(1)
+                  ? "bg-white/8 text-gold shadow-[inset_0_0_0_1px_rgba(255,197,92,0.3)]"
+                  : "text-white/70 hover:bg-white/5 hover:text-gold"
                   }`}
               >
-                {link.label}
+                <span className="relative z-10 flex items-center justify-between gap-2">
+                  <span>{link.label}</span>
+                  <span className={`h-1.5 w-1.5 rounded-full transition-all duration-200 ${active === link.href.slice(1) ? "bg-gold scale-100" : "bg-transparent group-hover:bg-gold/60"}`} />
+                </span>
+                <span className={`absolute inset-0 bg-gradient-to-r from-gold/8 to-transparent transition-all duration-200 ${active === link.href.slice(1) ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`} />
               </a>
             ))}
           </div>
