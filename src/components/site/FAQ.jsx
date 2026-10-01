@@ -4,7 +4,7 @@ import { FAQS } from "@/lib/siteData";
 import Reveal from "./Reveal";
 
 export default function FAQ() {
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState(-1);
 
   return (
     <section id="faq" className="bg-onyx text-white py-20 sm:py-28">
