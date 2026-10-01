@@ -16,8 +16,8 @@ const IMG = {
 export const BUSINESS = {
   name: "Rudy Jaya Elektrical",
   logo: businessLogo,
-  tagline: "Solusi Kelistrikan Profesional untuk Rumah, Kantor, dan Kebutuhan Bisnis Anda",
-  intro: "Penyedia layanan instalasi listrik terpercaya. Dengan komitmen untuk memberikan kualitas terbaik, tim teknisi berpengalaman kami siap membantu Anda untuk segala kebutuhan jasa instalasi listrik.",
+  tagline: "Layanan listrik untuk rumah, kantor, dan kebutuhan usaha di Jakarta Pusat.",
+  intro: "Rudy Jaya Elektrical membantu kebutuhan listrik rumah dan usaha dengan instalasi, perbaikan, panel, dan pencahayaan yang aman serta rapi. Kami fokus pada pekerjaan yang sesuai kondisi lokasi, kebutuhan harian, dan jadwal Anda.",
   phone: "0852-8098-5750",
   phoneIntl: "+6285280985750",
   whatsapp: "https://wa.me/6285280985750",
@@ -107,7 +107,7 @@ export const PORTFOLIO_IMAGES = Object.entries(portfolioFiles)
 export const SERVICES = {
   featured: {
     title: "Instalasi & Renovasi Listrik",
-    description: "Instalasi listrik baru dan renovasi untuk rumah, kantor, dan ruang komersial. Hasil rapi, aman, dan sesuai standar — dari penarikan kabel hingga pemasangan titik lampu dan stopkontak.",
+    description: "Kami membantu pemasangan listrik baru maupun renovasi di rumah, kantor, dan usaha. Pekerjaan mencakup kabel, titik lampu, stopkontak, panel, serta finishing yang rapi sesuai kondisi lokasi.",
     items: [
       "Instalasi listrik rumah baru",
       "Renovasi listrik rumah dan kantor",
@@ -243,23 +243,23 @@ export const TARGET_MARKET = [
 export const WHY_US = [
   {
     icon: "Users",
-    title: "Pelayanan Profesional",
-    description: "Tim teknisi berpengalaman kami merespon kebutuhan Anda dengan ramah dan memberikan solusi yang tepat sesuai kebutuhan Anda.",
+    title: "Penanganan sesuai kebutuhan",
+    description: "Kami menyesuaikan pekerjaan dengan kondisi rumah, kantor, atau usaha Anda agar hasilnya aman dan sesuai dengan kebutuhan listrik harian.",
   },
   {
     icon: "BadgeCheck",
-    title: "Teknisi Bersertifikat",
-    description: "Tenaga kami bersertifikat dan berpengalaman, siap menangani segala skala pekerjaan listrik dengan aman.",
+    title: "Teknisi yang paham kerja lapangan",
+    description: "Tim kami bekerja di lokasi dengan pendekatan yang praktis dan tetap memperhatikan keselamatan serta alur pengerjaan yang rapi.",
   },
   {
     icon: "ShieldCheck",
-    title: "Material Standar SNI",
-    description: "Semua material yang kami gunakan berstandar SNI untuk keamanan dan ketahanan jangka panjang.",
+    title: "Material yang dipilih sesuai kebutuhan",
+    description: "Material dan komponen yang kami pakai disesuaikan dengan kondisi instalasi agar aman, kuat, dan tahan lama.",
   },
   {
     icon: "Wrench",
-    title: "Kualitas Standar Tinggi",
-    description: "Kami mengutamakan kualitas dengan peralatan modern dan teknologi terkini untuk hasil terbaik.",
+    title: "Hasil yang rapi dan mudah dipakai",
+    description: "Kami memperhatikan tata letak kabel, titik lampu, dan panel agar sistem listrik berfungsi dengan nyaman dan terlihat rapi.",
   },
 ];
 
