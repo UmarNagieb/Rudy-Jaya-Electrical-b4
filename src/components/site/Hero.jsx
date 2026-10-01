@@ -1,4 +1,4 @@
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { BUSINESS, HERO_IMAGE, waLink } from "@/lib/siteData";
 import Reveal from "./Reveal";
 
@@ -37,7 +37,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 bg-gold text-onyx font-semibold px-6 py-4 rounded-md transition-all duration-200 ease-out min-h-[52px] hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
               >
-                <MessageCircle className="w-5 h-5" strokeWidth={2.5} />
+                <Phone className="w-5 h-5 motion-safe:group-hover:animate-phone-shake" strokeWidth={2.5} />
                 Hubungi via WhatsApp
               </a>
               <a
