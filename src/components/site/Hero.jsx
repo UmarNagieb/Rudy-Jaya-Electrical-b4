@@ -5,17 +5,19 @@ import Reveal from "./Reveal";
 export default function Hero() {
   return (
     <section id="home" className="relative bg-onyx text-white overflow-hidden">
-      <img
-        src={HERO_IMAGE}
-        alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
-        className="absolute inset-0 w-full h-full object-cover lg:hidden opacity-25"
-        loading="eager"
-      />
+      <Reveal x={48} y={0} delay={0.12} className="absolute inset-0 lg:hidden">
+        <img
+          src={HERO_IMAGE}
+          alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
+          className="absolute inset-0 w-full h-full object-cover opacity-25"
+          loading="eager"
+        />
+      </Reveal>
       <div className="absolute inset-0 bg-onyx/80 lg:hidden" />
 
       <div className="relative mx-auto max-w-7xl grid lg:grid-cols-2 min-h-[100svh]">
         <div className="flex flex-col justify-center px-5 sm:px-8 py-28 lg:py-0 lg:pr-12">
-          <Reveal>
+          <Reveal x={48} y={0}>
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold" />
               <span className="font-mono text-xs uppercase tracking-widest text-gold">
@@ -27,10 +29,14 @@ export default function Hero() {
               <br />
               <span className="text-gold">Elektrical</span>
             </h1>
-            <p className="mt-6 text-lg sm:text-xl text-white/60 leading-relaxed max-w-md">
+          </Reveal>
+          <Reveal x={48} y={0} delay={0.28} className="mt-6">
+            <p className="text-lg sm:text-xl text-white/60 leading-relaxed max-w-md">
               {BUSINESS.tagline}
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          </Reveal>
+          <Reveal x={48} y={0} delay={0.56} className="mt-8">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href={waLink()}
                 target="_blank"
@@ -52,12 +58,14 @@ export default function Hero() {
         </div>
 
         <div className="relative hidden lg:block">
-          <img
-            src={HERO_IMAGE}
-            alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="eager"
-          />
+          <Reveal x={48} y={0} delay={0.12} className="absolute inset-0">
+            <img
+              src={HERO_IMAGE}
+              alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
+          </Reveal>
           <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/30 to-transparent" />
         </div>
       </div>
