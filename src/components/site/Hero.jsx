@@ -11,6 +11,9 @@ export default function Hero() {
           alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
           className="absolute inset-0 w-full h-full object-cover opacity-25"
           loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          sizes="100vw"
         />
       </Reveal>
       <div className="absolute inset-0 bg-onyx/80 lg:hidden" />
@@ -64,6 +67,9 @@ export default function Hero() {
               alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
               className="absolute inset-0 w-full h-full object-cover"
               loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              sizes="50vw"
             />
           </Reveal>
           <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/30 to-transparent" />
