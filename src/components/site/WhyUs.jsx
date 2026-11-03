@@ -11,10 +11,10 @@ export default function WhyUs() {
         <Reveal>
           <div className="mb-14 max-w-2xl">
             <span className="font-mono text-xs uppercase tracking-widest text-gold">
-              02 — Kenapa Kami
+              02 — Why Choose Us
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Pekerjaan kelistrikan profesional yang dapat Anda percayai
+              Professional electrical work you can trust
             </h2>
           </div>
         </Reveal>

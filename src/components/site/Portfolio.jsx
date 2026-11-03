@@ -12,14 +12,13 @@ export default function Portfolio() {
         <Reveal>
           <div className="mb-14">
             <span className="font-mono text-xs uppercase tracking-widest text-conduit">
-              05 — Pekerjaan Kami
+              05 — Our Work
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Hasil Kerja Nyata
+              Project Gallery
             </h2>
             <p className="text-conduit mt-4 max-w-xl">
-              Dokumentasi langsung dari proyek pemasangan, perakitan, dan renovasi listrik yang kami
-              kerjakan.
+              Photos from our electrical installation, panel assembly, and renovation projects.
             </p>
           </div>
         </Reveal>

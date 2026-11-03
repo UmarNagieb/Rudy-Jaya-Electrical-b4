@@ -14,10 +14,10 @@ export default function TargetMarket() {
               04 — Target Market
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Kami Melayani Segala Kebutuhan Kelistrikan
+              We Meet a Wide Range of Electrical Needs
             </h2>
             <p className="text-white/50 mt-4">
-              Dari rumah tinggal hingga proyek industri ringan — semua skala pekerjaan kami layani.
+              From homes to light industrial projects, we handle jobs of every size.
             </p>
           </div>
         </Reveal>

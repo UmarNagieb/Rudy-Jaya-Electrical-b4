@@ -9,10 +9,10 @@ export default function Testimonials() {
         <Reveal>
           <div className="mb-14 text-center">
             <span className="font-mono text-xs uppercase tracking-widest text-conduit">
-              07 — Testimoni
+              07 — Testimonials
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Apa Kata Pelanggan
+              What Our Customers Say
             </h2>
           </div>
         </Reveal>
@@ -28,7 +28,7 @@ export default function Testimonials() {
                 <p className="flex-1 text-sm leading-relaxed text-white/75">“{t.quote}”</p>
                 <p className="font-heading text-lg font-bold mt-6 text-white">{t.name}</p>
                 <p className="font-mono text-xs uppercase tracking-widest text-white/45 mt-1">
-                  Pelanggan
+                  Customer
                 </p>
               </div>
             </Reveal>

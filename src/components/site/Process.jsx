@@ -8,10 +8,10 @@ export default function Process() {
         <Reveal>
           <div className="mb-16 text-center">
             <span className="font-mono text-xs uppercase tracking-widest text-conduit">
-              03 — Cara Kerja
+              03 — How It Works
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Proses Pengerjaan Kami
+              Our Work Process
             </h2>
           </div>
         </Reveal>

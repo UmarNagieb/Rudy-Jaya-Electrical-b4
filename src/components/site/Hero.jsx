@@ -8,7 +8,7 @@ export default function Hero() {
       <Reveal x={48} y={0} delay={0.12} className="absolute inset-0 lg:hidden">
         <img
           src={HERO_IMAGE}
-          alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
+          alt="Completed electrical panel installation by Rudy Jaya Elektrical"
           className="absolute inset-0 w-full h-full object-cover opacity-25"
           loading="eager"
           fetchPriority="high"
@@ -24,7 +24,7 @@ export default function Hero() {
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold" />
               <span className="font-mono text-xs uppercase tracking-widest text-gold">
-                Jasa Listrik Jakarta Pusat
+                Electrical Services in Central Jakarta
               </span>
             </div>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05]">
@@ -47,13 +47,13 @@ export default function Hero() {
                 className="group inline-flex items-center justify-center gap-2 bg-gold text-onyx font-semibold px-6 py-4 rounded-md transition-all duration-200 ease-out min-h-[52px] hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
               >
                 <Phone className="w-5 h-5 motion-safe:group-hover:animate-phone-shake" strokeWidth={2.5} />
-                Hubungi via WhatsApp
+                Contact Us on WhatsApp
               </a>
               <a
                 href="#layanan"
                 className="group inline-flex items-center justify-center gap-2 border border-white/20 text-white font-medium px-6 py-4 rounded-md transition-all duration-200 ease-out min-h-[52px] hover:-translate-y-0.5 hover:border-gold/70 hover:bg-white/5 hover:text-gold active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
               >
-                Lihat Layanan
+                View Services
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
               </a>
             </div>
@@ -64,7 +64,7 @@ export default function Hero() {
           <Reveal x={48} y={0} delay={0.12} className="absolute inset-0">
             <img
               src={HERO_IMAGE}
-              alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
+              alt="Completed electrical panel installation by Rudy Jaya Elektrical"
               className="absolute inset-0 w-full h-full object-cover"
               loading="eager"
               fetchPriority="high"

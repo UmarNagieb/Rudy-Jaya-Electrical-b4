@@ -11,10 +11,10 @@ export default function Services() {
         <Reveal>
           <div className="mb-14">
             <span className="font-mono text-xs uppercase tracking-widest text-conduit">
-              01 — Layanan
+              01 — Services
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Layanan Kelistrikan Kami
+              Our Electrical Services
             </h2>
           </div>
         </Reveal>
@@ -22,7 +22,7 @@ export default function Services() {
         <Reveal delay={0.1}>
           <div className="grid lg:grid-cols-5 gap-0 mb-16 border border-onyx/10 rounded-xl overflow-hidden bg-white">
             <div className="lg:col-span-3 p-8 sm:p-10">
-              <span className="font-mono text-xs uppercase tracking-widest text-gold">Unggulan</span>
+              <span className="font-mono text-xs uppercase tracking-widest text-gold">Featured</span>
               <h3 className="font-heading text-2xl sm:text-3xl font-bold mt-3">
                 {SERVICES.featured.title}
               </h3>
@@ -39,7 +39,7 @@ export default function Services() {
             <div className="lg:col-span-2 relative min-h-[240px] lg:min-h-0">
               <img
                 src={GALLERY[11].w}
-                alt="Perakitan panel listrik oleh Rudy Jaya Elektrical"
+                alt="Electrical panel assembly by Rudy Jaya Elektrical"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
                 width={800}

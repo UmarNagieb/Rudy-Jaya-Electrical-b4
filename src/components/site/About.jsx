@@ -10,7 +10,7 @@ export default function About() {
           <div className="relative">
             <img
               src={GALLERY[12].w}
-              alt="Hasil pemasangan panel listrik oleh Rudy Jaya Elektrical"
+              alt="Completed electrical panel installation by Rudy Jaya Elektrical"
               loading="lazy"
               className="rounded-xl w-full object-cover"
               width={800}
@@ -18,16 +18,16 @@ export default function About() {
             />
             <div className="absolute -bottom-4 -right-4 sm:-right-6 bg-onyx text-white p-5 rounded-lg shadow-xl hidden sm:block">
               <p className="font-mono text-xs uppercase tracking-widest text-gold mb-1">
-                Jakarta Pusat
+                Central Jakarta
               </p>
-              <p className="font-semibold text-sm">Karet Tengsin & sekitarnya</p>
+              <p className="font-semibold text-sm">Karet Tengsin & surrounding areas</p>
             </div>
           </div>
         </Reveal>
         <Reveal delay={0.1}>
           <div>
             <span className="font-mono text-xs uppercase tracking-widest text-conduit">
-              06 — Tentang
+              06 — About
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3 mb-5">
               {BUSINESS.name}

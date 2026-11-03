@@ -1,7 +1,7 @@
 import { useEffect, useId, useState } from "react";
 import { Clock } from "lucide-react";
 
-const WEEKDAYS = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function isBusinessOpen(date = new Date()) {
   const parts = new Intl.DateTimeFormat("en-US", {
@@ -47,7 +47,7 @@ function formatMinutes(minutes) {
   const hour = Math.floor(normalized / 60).toString().padStart(2, "0");
   const minute = (normalized % 60).toString().padStart(2, "0");
 
-  return `${hour}.${minute}`;
+  return `${hour}:${minute}`;
 }
 
 function formatLocalRange(sourceDay, openingHour, closingHour, offsetDifference) {
@@ -55,7 +55,7 @@ function formatLocalRange(sourceDay, openingHour, closingHour, offsetDifference)
   const closing = sourceDay * 1440 + closingHour * 60 + offsetDifference;
   const localOpeningDay = ((Math.floor(opening / 1440) % 7) + 7) % 7;
   const localClosingDay = ((Math.floor(closing / 1440) % 7) + 7) % 7;
-  const nextDayNote = localClosingDay !== localOpeningDay ? " (hari berikutnya)" : "";
+  const nextDayNote = localClosingDay !== localOpeningDay ? " (next day)" : "";
 
   return `${WEEKDAYS[localOpeningDay]}, ${formatMinutes(opening)}–${formatMinutes(closing)}${nextDayNote}`;
 }
@@ -121,7 +121,7 @@ export default function BusinessStatus({ compact = false }) {
               }`}
           />
         </span>
-        {isOpen ? "Sedang buka" : "Sedang tutup"}
+        {isOpen ? "Open now" : "Closed"}
       </span>
 
       <span
@@ -135,7 +135,7 @@ export default function BusinessStatus({ compact = false }) {
           </span>
           <span className="min-w-0">
             <span className="block text-[10px] font-semibold uppercase tracking-wider text-conduit">
-              Waktu lokal Anda
+              Your local time
             </span>
             <span className="mt-1 block font-mono text-lg font-semibold leading-none tabular-nums">
               {formatLocalTime(now)}

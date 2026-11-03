@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-white/40 mb-4">
-              Tautan
+              Links
             </p>
             <ul className="space-y-2.5">
               {NAV_LINKS.map((link) => (
@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-white/40 mb-4">
-              Kontak
+              Contact
             </p>
             <div className="flex items-center gap-2.5">
               <Phone className="w-4 h-4 shrink-0 text-gold" aria-hidden="true" />
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-white/40 mb-4">
-              Lokasi & Jam
+              Location & Hours
             </p>
             <div className="flex items-start gap-2.5">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-gold" aria-hidden="true" />
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3">
           <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} Rudy Jaya Elektrical. Jasa Listrik Jakarta Pusat.
+            © {new Date().getFullYear()} Rudy Jaya Elektrical. Electrical Services in Central Jakarta.
           </p>
         </div>
       </div>

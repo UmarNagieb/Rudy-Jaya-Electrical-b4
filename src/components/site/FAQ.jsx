@@ -12,10 +12,10 @@ export default function FAQ() {
         <Reveal>
           <div className="mb-12 text-center">
             <span className="font-mono text-xs uppercase tracking-widest text-gold">
-              08 — Tanya Jawab
+              08 — FAQ
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-3">
-              Pertanyaan yang Sering Diajukan
+              Frequently Asked Questions
             </h2>
           </div>
         </Reveal>

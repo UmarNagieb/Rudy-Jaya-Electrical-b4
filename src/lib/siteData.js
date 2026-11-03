@@ -16,20 +16,20 @@ const IMG = {
 export const BUSINESS = {
   name: "Rudy Jaya Elektrical",
   logo: businessLogo,
-  tagline: "Layanan listrik untuk rumah, kantor, dan kebutuhan usaha di Jakarta Pusat.",
-  intro: "Rudy Jaya Elektrical membantu kebutuhan listrik rumah dan usaha dengan instalasi, perbaikan, panel, dan pencahayaan yang aman serta rapi. Kami fokus pada pekerjaan yang sesuai kondisi lokasi, kebutuhan harian, dan jadwal Anda.",
+  tagline: "Electrical services for homes, offices, and businesses in Central Jakarta.",
+  intro: "Rudy Jaya Elektrical meets the electrical needs of homes and businesses with safe, neat installation, repairs, panels, and lighting. We tailor our work to your site, day-to-day needs, and schedule.",
   phone: "0852-8098-5750",
   phoneIntl: "+6285280985750",
   whatsapp: "https://wa.me/6285280985750",
-  whatsappMessage: "Halo Rudy Jaya Elektrical, saya ingin berkonsultasi mengenai kebutuhan kelistrikan.",
-  address: "Jl. Karet Pasar Baru Barat I No. 22, Karet Tengsin, Tanah Abang, Jakarta Pusat",
-  hoursWeek: "Senin–Sabtu, 08.00–20.00 WIB",
-  hoursSun: "Minggu, 09.00–20.00 WIB",
+  whatsappMessage: "Hello Rudy Jaya Elektrical, I would like to discuss my electrical needs.",
+  address: "Karet Pasar Baru Barat I Street No. 22, Karet Tengsin, Tanah Abang, Central Jakarta",
+  hoursWeek: "Monday–Saturday, 08:00–20:00 Western Indonesian Time",
+  hoursSun: "Sunday, 09:00–20:00 Western Indonesian Time",
   mapsUrl: "https://www.google.com/maps/place/Tukang+listrik+JAKARTA+(Rudy+jaya+elektrical)/@-6.2059353,106.8107168,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f73d4289691f:0xa3cc1f41a0f27985!8m2!3d-6.2059353!4d106.8107168!16s%2Fg%2F11xtnrn4z_?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
   areas: [
     "Karet Tengsin", "Tanah Abang", "Bendungan Hilir", "Kebon Melati",
-    "Cideng", "Petamburan", "Sudirman", "Jakarta Pusat",
-    "Jakarta Selatan", "Jakarta Barat",
+    "Cideng", "Petamburan", "Sudirman", "Central Jakarta",
+    "South Jakarta", "West Jakarta",
   ],
 };
 
@@ -39,31 +39,31 @@ export function waLink(message) {
 }
 
 export const NAV_LINKS = [
-  { label: "Beranda", href: "#home" },
-  { label: "Layanan", href: "#layanan" },
-  { label: "Cara Kerja", href: "#cara-kerja" },
-  { label: "Portofolio", href: "#portfolio" },
-  { label: "Tentang", href: "#tentang" },
-  { label: "Tanya Jawab", href: "#faq" },
-  { label: "Kontak", href: "#kontak" },
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#layanan" },
+  { label: "How It Works", href: "#cara-kerja" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "About", href: "#tentang" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#kontak" },
 ];
 
 export const HERO_IMAGE = IMG.hero;
 
 export const GALLERY = [
-  { caption: "Pemasangan Lampu Gantung", category: "Penerangan", w: IMG.pendantLamp },
-  { caption: "Proses Piping — Instalasi", category: "Instalasi", w: IMG.conduitPiping },
-  { caption: "Hasil Pemasangan", category: "Instalasi", w: IMG.ledStrip },
-  { caption: "Pemasangan Lampu LED Strip", category: "Penerangan", w: IMG.ledStrip },
-  { caption: "Proses Piping — Panel", category: "Panel", w: IMG.panelAssembly },
-  { caption: "Relokasi Panel", category: "Panel", w: IMG.finishedPanel },
-  { caption: "Proses Piping — Penarikan Kabel", category: "Instalasi", w: IMG.conduitPiping },
-  { caption: "Proses Piping — Finishing", category: "Instalasi", w: IMG.conduitPiping },
-  { caption: "Pemasangan Lampu", category: "Penerangan", w: IMG.pendantLamp },
-  { caption: "Penandaan Panel Listrik", category: "Panel", w: IMG.finishedPanel },
-  { caption: "Hasil Renovasi Lampu LED Strip dan Gantung", category: "Renovasi", w: IMG.renovation },
-  { caption: "Perakitan Panel", category: "Panel", w: IMG.panelAssembly },
-  { caption: "Hasil Pemasangan Panel", category: "Panel", w: IMG.finishedPanel },
+  { caption: "Pendant Light Installation", category: "Lighting", w: IMG.pendantLamp },
+  { caption: "Conduit Installation", category: "Installation", w: IMG.conduitPiping },
+  { caption: "Completed Installation", category: "Installation", w: IMG.ledStrip },
+  { caption: "LED Strip Light Installation", category: "Lighting", w: IMG.ledStrip },
+  { caption: "Panel Conduit Installation", category: "Panels", w: IMG.panelAssembly },
+  { caption: "Panel Relocation", category: "Panels", w: IMG.finishedPanel },
+  { caption: "Cable Routing", category: "Installation", w: IMG.conduitPiping },
+  { caption: "Conduit Finishing", category: "Installation", w: IMG.conduitPiping },
+  { caption: "Light Installation", category: "Lighting", w: IMG.pendantLamp },
+  { caption: "Electrical Panel Labeling", category: "Panels", w: IMG.finishedPanel },
+  { caption: "LED Strip and Pendant Light Renovation", category: "Renovation", w: IMG.renovation },
+  { caption: "Electrical Panel Assembly", category: "Panels", w: IMG.panelAssembly },
+  { caption: "Completed Electrical Panel Installation", category: "Panels", w: IMG.finishedPanel },
 ];
 
 const portfolioFiles = import.meta.glob(
@@ -75,91 +75,94 @@ const portfolioFiles = import.meta.glob(
   }
 );
 
+const PORTFOLIO_CAPTIONS = {
+  "1.1 pemasangan lampu gantung.jpg": { caption: "Pendant Light Installation", category: "Lighting" },
+  "1.2 proses peping.jpg": { caption: "Conduit Installation", category: "Installation" },
+  "1.3 hasil pemasangan.jpg": { caption: "Completed Installation", category: "Installation" },
+  "2.1 pemasangan lampu ledstrip.jpg": { caption: "LED Strip Light Installation", category: "Lighting" },
+  "2.2 proses peping.jpg": { caption: "Panel Conduit Installation", category: "Installation" },
+  "2.3 relokasi panel.jpg": { caption: "Electrical Panel Relocation", category: "Panels" },
+  "3.1 proses peping.jpg": { caption: "Cable Routing", category: "Installation" },
+  "3.2 proses peping.jpg": { caption: "Conduit Finishing", category: "Installation" },
+  "4.1 pemasangan lampu.jpg": { caption: "Light Installation", category: "Lighting" },
+  "4.2 Penandaan panel listrik.jpg": { caption: "Electrical Panel Labeling", category: "Panels" },
+  "4.3 hasil renovasi lampu ledsrip dan gantung.jpg": { caption: "LED Strip and Pendant Light Renovation", category: "Renovation" },
+  "5.1 perakitan panel.jpg": { caption: "Electrical Panel Assembly", category: "Panels" },
+  "5.2 hasil pemasangaan panel.jpg": { caption: "Completed Electrical Panel Installation", category: "Panels" },
+  "5.3 relokasi serve.jpg": { caption: "Electrical Panel Relocation", category: "Panels" },
+};
+
 export const PORTFOLIO_IMAGES = Object.entries(portfolioFiles)
   .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath, undefined, { numeric: true }))
   .map(([imagePath, src]) => {
     const filename = imagePath.slice(imagePath.lastIndexOf("/") + 1);
-    const captionWords = filename
-      .replace(/^\d+(?:\.\d+)?\s*/, "")
-      .replace(/\.[^.]+$/, "")
-      .toLocaleLowerCase("id-ID")
-      .split(/\s+/);
-    const caption = captionWords
-      .map((word, wordIndex) => {
-        if (wordIndex > 0 && word === "dan") return word;
-        if (word === "ledstrip" || word === "ledsrip") return "LED Strip";
-        return word.charAt(0).toLocaleUpperCase("id-ID") + word.slice(1);
-      })
-      .join(" ");
-    const normalizedCaption = caption.toLowerCase();
+    const translated = PORTFOLIO_CAPTIONS[filename] || {
+      caption: "Electrical Project",
+      category: "Installation",
+    };
 
     return {
       src,
-      caption,
-      category: normalizedCaption.includes("panel")
-        ? "Panel"
-        : normalizedCaption.includes("lampu") || normalizedCaption.includes("led")
-          ? "Penerangan"
-          : "Instalasi",
+      ...translated,
     };
   });
 
 export const SERVICES = {
   featured: {
-    title: "Instalasi & Renovasi Listrik",
-    description: "Kami membantu pemasangan listrik baru maupun renovasi di rumah, kantor, dan usaha. Pekerjaan mencakup kabel, titik lampu, stopkontak, panel, serta finishing yang rapi sesuai kondisi lokasi.",
+    title: "Electrical Installation & Renovation",
+    description: "We handle new electrical installations and renovations for homes, offices, and businesses. Our work includes wiring, lighting points, outlets, panels, and neat finishing tailored to your site.",
     items: [
-      "Instalasi listrik rumah baru",
-      "Renovasi listrik rumah dan kantor",
-      "Tambah titik lampu dan stopkontak",
-      "Instalasi plafon — kabel rapi tersembunyi",
+      "New home electrical installations",
+      "Home and office electrical renovations",
+      "Additional lighting points and outlets",
+      "Ceiling installations with neatly concealed wiring",
     ],
   },
   groups: [
     {
       icon: "Cable",
-      title: "Instalasi",
+      title: "Installation",
       items: [
-        "Instalasi listrik baru",
-        "Tambah titik lampu & stopkontak",
-        "Instalasi AC & jalur listriknya",
-        "Pemasangan CCTV dan jalur dayanya",
-        "Jalur listrik pemanas air, kulkas, dan mesin cuci",
+        "New electrical installations",
+        "Additional lighting points and outlets",
+        "Air conditioner installation and power circuits",
+        "CCTV installation and power wiring",
+        "Dedicated circuits for water heaters, refrigerators, and washing machines",
       ],
     },
     {
       icon: "Wrench",
-      title: "Perbaikan",
+      title: "Repairs",
       items: [
-        "Perbaikan konsleting (korslet)",
-        "Ganti MCB rusak",
-        "Stopkontak terbakar",
-        "Ganti kabel lama yang getas atau panas",
-        "Audit listrik rumah",
+        "Short-circuit repairs",
+        "Faulty circuit breaker replacement",
+        "Burnt outlet replacement",
+        "Replacement of brittle or overheating wires",
+        "Home electrical inspections",
       ],
     },
     {
       icon: "CircuitBoard",
-      title: "Panel & Pembumian",
+      title: "Panels & Grounding",
       items: [
-        "Perakitan panel listrik",
-        "Pemasangan pembumian (grounding)",
-        "Relokasi panel",
-        "Peningkatan daya PLN",
-        "Penandaan panel listrik",
-        "Sistem genset & ATS",
+        "Electrical panel assembly",
+        "Grounding installation",
+        "Panel relocation",
+        "Power capacity upgrades",
+        "Electrical panel labeling",
+        "Generator and automatic transfer switch (ATS) systems",
       ],
     },
     {
       icon: "Lightbulb",
-      title: "Penerangan",
+      title: "Lighting",
       items: [
-        "Pemasangan lampu gantung",
-        "Pemasangan lampu LED strip",
-        "Lampu hias & plafon",
-        "Lampu taman & luar ruangan",
-        "Lampu sensor otomatis",
-        "Lampu darurat",
+        "Pendant light installation",
+        "LED strip light installation",
+        "Decorative and ceiling lights",
+        "Garden and outdoor lighting",
+        "Automatic sensor lights",
+        "Emergency lighting",
       ],
     },
   ],
@@ -168,74 +171,74 @@ export const SERVICES = {
 export const PROCESS_STEPS = [
   {
     no: "01",
-    title: "Konsultasi dan Perencanaan",
-    description: "Kami membahas kebutuhan dan anggaran Anda, membuat rencana terperinci untuk memastikan semuanya siap sebelum memulai.",
+    title: "Consultation & Planning",
+    description: "We discuss your needs and budget, then create a detailed plan to make sure everything is ready before work begins.",
   },
   {
     no: "02",
-    title: "Desain dan Persetujuan",
-    description: "Kami membuat desain khusus berdasarkan ide-ide Anda, meninjau bersama-sama untuk memastikan desain tersebut memenuhi harapan Anda.",
+    title: "Design & Approval",
+    description: "We create a tailored design based on your ideas and review it with you to make sure it meets your expectations.",
   },
   {
     no: "03",
-    title: "Konstruksi dan Eksekusi",
-    description: "Tim kami memulai pengerjaan, mengelola setiap fase dengan cermat dan memberi Anda informasi terkini selama proses berlangsung.",
+    title: "Work & Implementation",
+    description: "Our team gets to work, carefully managing each phase and keeping you updated throughout the process.",
   },
   {
     no: "04",
-    title: "Inspeksi dan Serah Terima",
-    description: "Setelah selesai, kami memeriksa pekerjaan, dan setelah Anda menyetujuinya, kami serahkan ruang Anda yang telah siap sesuai keinginan Anda.",
+    title: "Inspection & Handover",
+    description: "Once the work is complete, we inspect it and, after your approval, hand over the finished space.",
   },
 ];
 
 export const TARGET_MARKET = [
   {
-    group: "Residensial",
+    group: "Residential",
     icon: "Home",
     items: [
-      { name: "Rumah Tinggal", need: "Perbaikan korslet, tambah titik lampu, ganti MCB" },
-      { name: "Apartemen", need: "Instalasi panel kecil, perawatan listrik rutin" },
-      { name: "Kos-kosan", need: "Instalasi kamar, meteran individu, stopkontak" },
-      { name: "Kontrakan", need: "Perawatan kabel & pembumian" },
-      { name: "Rumah Tua", need: "Penggantian kabel lama & pembumian" },
-      { name: "Rumah Mewah", need: "Sistem listrik pintar & lampu otomatis" },
+      { name: "Homes", need: "Short-circuit repairs, additional lights, breaker replacement" },
+      { name: "Apartments", need: "Small panel installations and routine electrical maintenance" },
+      { name: "Boarding Houses", need: "Room wiring, individual meters, and outlets" },
+      { name: "Rental Homes", need: "Wiring and grounding maintenance" },
+      { name: "Older Homes", need: "Old wiring replacement and grounding" },
+      { name: "Luxury Homes", need: "Smart electrical systems and automatic lighting" },
     ],
   },
   {
-    group: "Komersial",
+    group: "Commercial",
     icon: "Building2",
     items: [
-      { name: "Ruko", need: "Instalasi baru, penambahan stopkontak & lampu" },
-      { name: "Toko", need: "Perbaikan lampu & kabel display, pasang saklar" },
-      { name: "Minimarket", need: "Distribusi listrik kulkas, AC, dan penerangan" },
-      { name: "Restoran", need: "Jalur listrik kompor & kulkas industri" },
-      { name: "Kafe", need: "Penerangan dekoratif, stopkontak & sistem tata suara" },
-      { name: "Salon", need: "Stopkontak pengering rambut, mesin, dan pencahayaan" },
-      { name: "Laundry", need: "Jalur khusus mesin cuci & pemanas air" },
-      { name: "Bengkel Motor", need: "Jalur daya untuk alat las & kompresor" },
+      { name: "Shophouses", need: "New installations and additional outlets and lighting" },
+      { name: "Retail Stores", need: "Display lighting and wiring repairs, switch installation" },
+      { name: "Convenience Stores", need: "Power distribution for refrigerators, air conditioning, and lighting" },
+      { name: "Restaurants", need: "Dedicated circuits for stoves and commercial refrigerators" },
+      { name: "Cafes", need: "Decorative lighting, outlets, and sound systems" },
+      { name: "Salons", need: "Outlets for hair dryers, equipment, and lighting" },
+      { name: "Laundromats", need: "Dedicated circuits for washing machines and water heaters" },
+      { name: "Motorcycle Repair Shops", need: "Power circuits for welding equipment and compressors" },
     ],
   },
   {
-    group: "Fasilitas & Industri",
+    group: "Facilities & Light Industry",
     icon: "Building",
     items: [
-      { name: "Sekolah", need: "Perawatan panel, stopkontak lab, penerangan kelas" },
-      { name: "Masjid", need: "Pemasangan perangkat tata suara & lampu hemat energi" },
-      { name: "Klinik", need: "Jalur stabil listrik alat medis" },
-      { name: "Hotel", need: "Sistem penerangan & kontrol daya tiap kamar" },
-      { name: "Pabrik Kecil", need: "Panel 3 fasa & jalur mesin industri ringan" },
-      { name: "Gudang", need: "Instalasi penerangan & colokan alat angkut barang" },
-      { name: "SPBU", need: "Jalur aman pompa & lampu luar" },
+      { name: "Schools", need: "Panel maintenance, lab outlets, and classroom lighting" },
+      { name: "Mosques", need: "Sound system installation and energy-efficient lighting" },
+      { name: "Clinics", need: "Stable power circuits for medical equipment" },
+      { name: "Hotels", need: "Lighting systems and room-by-room power controls" },
+      { name: "Small Factories", need: "Three-phase panels and circuits for light industrial machinery" },
+      { name: "Warehouses", need: "Lighting and outlets for material-handling equipment" },
+      { name: "Fuel Stations", need: "Safe circuits for pumps and outdoor lighting" },
     ],
   },
   {
-    group: "Mitra Proyek",
+    group: "Project Partners",
     icon: "Briefcase",
     items: [
-      { name: "Pengembang Properti", need: "Instalasi awal unit baru" },
-      { name: "Arsitek / Kontraktor", need: "Mitra pemasangan listrik proyek" },
-      { name: "Penyelenggara Acara", need: "Pemasangan listrik panggung & perangkat tata suara" },
-      { name: "RT/RW Setempat", need: "Instalasi penerangan lingkungan" },
+      { name: "Property Developers", need: "Initial installations for new units" },
+      { name: "Architects / Contractors", need: "Electrical installation partners for projects" },
+      { name: "Event Organizers", need: "Stage power and sound system installation" },
+      { name: "Local Community Associations", need: "Community area lighting installations" },
     ],
   },
 ];
@@ -243,62 +246,62 @@ export const TARGET_MARKET = [
 export const WHY_US = [
   {
     icon: "Users",
-    title: "Pelayanan Profesional",
-    description: "Tim teknisi berpengalaman kami merespon kebutuhan Anda dengan ramah dan memberikan solusi yang tepat sesuai kebutuhan Anda.",
+    title: "Professional Service",
+    description: "Our experienced technicians respond courteously and provide solutions tailored to your needs.",
   },
   {
     icon: "BadgeCheck",
-    title: "Teknisi Bersertifikat",
-    description: "Tenaga kami bersertifikat dan berpengalaman, siap menangani segala skala pekerjaan listrik dengan aman.",
+    title: "Certified Technicians",
+    description: "Our certified, experienced technicians are ready to safely handle electrical projects of any size.",
   },
   {
     icon: "ShieldCheck",
-    title: "Material Standar SNI",
-    description: "Semua material yang kami gunakan berstandar SNI untuk keamanan dan ketahanan jangka panjang.",
+    title: "Indonesian National Standard (SNI) Materials",
+    description: "We use materials that meet Indonesian National Standards (SNI) for safety and long-term durability.",
   },
   {
     icon: "Wrench",
-    title: "Kualitas Standar Tinggi",
-    description: "Kami mengutamakan kualitas dengan peralatan modern dan teknologi terkini untuk hasil terbaik.",
+    title: "High-Quality Work",
+    description: "We prioritize quality and use modern equipment and up-to-date technology to deliver excellent results.",
   },
 ];
 
 export const FAQS = [
-  { q: "Apakah Rudy Jaya Elektrical melayani panggilan ke rumah?", a: "Ya, kami siap datang ke lokasi rumah Anda di Karet Tengsin dan sekitarnya." },
-  { q: "Bisa perbaiki listrik korslet?", a: "Tentu, kami ahli menangani korsleting dengan aman dan cepat." },
-  { q: "Melayani area mana saja?", a: "Seluruh Tanah Abang, Bendungan Hilir, Kebon Melati, Cideng, Petamburan, Sudirman, hingga Jakarta Pusat, Selatan, dan Barat." },
-  { q: "Apakah bisa pasang instalasi baru rumah?", a: "Bisa, kami menangani instalasi listrik rumah baru dan renovasi." },
-  { q: "Apakah melayani listrik untuk kantor?", a: "Ya, kami pasang dan rawat listrik kantor dengan sistem aman." },
-  { q: "Apa saja layanan listriknya?", a: "Instalasi, perbaikan, pembumian, MCB, panel, dan perawatan." },
-  { q: "Apakah ada garansi pengerjaan?", a: "Ada, kami pastikan hasil rapi, aman, dan sesuai standar." },
-  { q: "Apakah teknisinya bersertifikat?", a: "Ya, tenaga kami bersertifikat dan berpengalaman." },
-  { q: "Apakah alat dan kabelnya standar SNI?", a: "Ya, semua material yang kami gunakan berstandar SNI." },
-  { q: "Apakah menerima proyek kecil?", a: "Tentu, kami melayani semua skala pekerjaan listrik tanpa minimum." },
-  { q: "Apakah melayani proyek besar juga?", a: "Ya, kami berpengalaman di proyek gedung dan kantor." },
-  { q: "Bagaimana cara menghubungi Rudy Jaya Elektrical?", a: "Silakan hubungi kami melalui nomor yang tercantum di bagian Kontak." },
+  { q: "Does Rudy Jaya Elektrical offer home visits?", a: "Yes, we can visit your home in Karet Tengsin and the surrounding areas." },
+  { q: "Can you repair electrical short circuits?", a: "Yes. We handle short circuits safely and efficiently." },
+  { q: "Which areas do you serve?", a: "We serve Tanah Abang, Bendungan Hilir, Kebon Melati, Cideng, Petamburan, Sudirman, Central Jakarta, South Jakarta, and West Jakarta." },
+  { q: "Can you install new wiring in a home?", a: "Yes, we handle new home electrical installations and renovations." },
+  { q: "Do you provide electrical services for offices?", a: "Yes, we install and maintain safe office electrical systems." },
+  { q: "What electrical services do you offer?", a: "Installation, repairs, grounding, circuit breakers, panels, and maintenance." },
+  { q: "Do you provide a workmanship warranty?", a: "Yes, we ensure our work is neat, safe, and meets applicable standards." },
+  { q: "Are your technicians certified?", a: "Yes, our technicians are certified and experienced." },
+  { q: "Do your tools and wiring meet SNI standards?", a: "Yes, the materials we use meet Indonesian National Standards (SNI)." },
+  { q: "Do you take on small projects?", a: "Of course. We handle electrical projects of every size, with no minimum." },
+  { q: "Do you also handle large projects?", a: "Yes, we have experience with building and office projects." },
+  { q: "How can I contact Rudy Jaya Elektrical?", a: "Please call or message us using the number listed in the Contact section." },
 ];
 
 export const TESTIMONIALS = [
   {
     name: "Dimas Aditya",
-    quote: "Buat yang cari solusi untuk pengerjaan instalasi listrik baru, renov atau maintenance, saya rekomend banget soalnya pekerjaannya rapi, cepat dan bisa dipercaya. Dijamin gak bakal nyesel pakai jasanya.",
+    quote: "If you need new electrical installation, renovation, or maintenance, I highly recommend them. The work is neat, fast, and reliable. You won't regret hiring them.",
     rating: 5,
   },
   {
     name: "Anissa Sashabilla",
-    quote: "Top banget, ada masalah minor soal listrik langsung sat set dan komunikatif. Thank you mas Rudy.",
+    quote: "Excellent service. I had a minor electrical issue, and it was handled quickly with great communication. Thank you, Rudy.",
     rating: 5,
   },
   {
     name: "Puspita R.",
-    quote: "Sudah langganan jasa instalasi listrik ini sampai sekarang pindah rumah, karena pengerjaan cepat dan profesional 👍🏻👍🏻",
+    quote: "I've relied on this electrical installation service even after moving house because the work is fast and professional. 👍🏻👍🏻",
     rating: 5,
   },
 ];
 
 export const TRUST_BADGES = [
-  "Teknisi Bersertifikat",
-  "Material Standar SNI",
-  "Garansi Pengerjaan",
-  "Semua Skala Pekerjaan",
+  "Certified Technicians",
+  "SNI-Compliant Materials",
+  "Workmanship Warranty",
+  "Projects of Any Size",
 ];

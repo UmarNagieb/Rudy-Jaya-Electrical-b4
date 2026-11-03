@@ -13,17 +13,17 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
               <span className="font-mono text-xs uppercase tracking-widest text-conduit">
-                09 — Kontak
+                09 — Contact
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mt-3 mb-5">
-                Butuh Bantuan
+                Need Electrical
                 <br />
-                Kelistrikan?
+                Help?
               </h2>
               <p className="text-conduit leading-relaxed mb-8 max-w-md">
-                Konsultasikan kebutuhan kelistrikan Anda dengan teknisi kami yang siap datang ke
-                lokasi di Karet Tengsin dan sekitarnya. Hubungi kami melalui nomor pada informasi
-                kontak.
+                Discuss your electrical needs with our technicians. We are ready to visit locations
+                in Karet Tengsin and the surrounding areas. Call or message us using the contact
+                details provided.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ export default function Contact() {
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" strokeWidth={2} />
                 <div>
                   <p className="font-mono text-xs uppercase tracking-widest text-conduit mb-1">
-                    Alamat
+                    Address
                   </p>
                   <p className="text-sm leading-relaxed">{BUSINESS.address}</p>
                   <a
@@ -41,7 +41,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-gold font-medium mt-2 transition-colors duration-200 hover:text-onyx hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-sm"
                   >
-                    Buka di Google Maps <ArrowUpRight className="w-3.5 h-3.5" />
+                    Open in Google Maps <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function Contact() {
                 <div>
                   <div className="flex flex-wrap items-center gap-3">
                     <p className="font-mono text-xs uppercase tracking-widest text-conduit">
-                      Jam Operasional
+                      Business Hours
                     </p>
                     <BusinessStatus />
                   </div>
@@ -64,14 +64,14 @@ export default function Contact() {
                 <Phone className="w-5 h-5 text-gold shrink-0 mt-0.5" strokeWidth={2} />
                 <div>
                   <p className="font-mono text-xs uppercase tracking-widest text-conduit mb-1">
-                    Telepon / WhatsApp
+                    Phone / WhatsApp
                   </p>
                   <p className="font-mono text-sm">{BUSINESS.phone}</p>
                 </div>
               </div>
               <div className="pt-4 border-t border-onyx/10">
                 <p className="font-mono text-xs uppercase tracking-widest text-conduit mb-3">
-                  Area Layanan
+                  Service Areas
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {BUSINESS.areas.map((area) => (
